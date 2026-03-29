@@ -1,9 +1,7 @@
-"use client";
-
-export const dynamic = 'force-dynamic';
-
 import { Suspense } from "react";
 import { BookingWizard } from "@/components/booking/BookingWizard";
+
+export const dynamic = 'force-dynamic';
 
 export default function BookingPage() {
   return (
