@@ -18,7 +18,7 @@ export function BookingSuccess({ formData, selectedRoom, nights, totalPrice }) {
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-8 border-4 border-white shadow-sm">
           <Check className="w-10 h-10 text-green-500" strokeWidth={3} />
         </div>
-        <h2 className="text-3xl font-black text-[#1e293b] mb-4">You're All Set!</h2>
+        <h2 className="text-3xl font-black text-[#1e293b] mb-4">You&apos;re All Set!</h2>
         <p className="text-gray-400 mb-8 max-w-md mx-auto font-medium">
           Your booking at The Exotica Agonda has been confirmed. You will receive an email shortly with your full itinerary.
         </p>

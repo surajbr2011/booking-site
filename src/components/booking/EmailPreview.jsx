@@ -20,7 +20,7 @@ export function EmailPreview({ data, room, nights, totalPrice }) {
         <div className="space-y-2">
           <h2 className="text-xl font-bold text-gray-800">Hi {data.firstName},</h2>
           <p className="text-gray-500 leading-relaxed font-medium">
-            Your stay at The Exotica Agonda is confirmed. We're getting everything ready for your arrival. Here's a summary of your reservation.
+            Your stay at The Exotica Agonda is confirmed. We&apos;re getting everything ready for your arrival. Here&apos;s a summary of your reservation.
           </p>
         </div>
 

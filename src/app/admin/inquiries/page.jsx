@@ -98,7 +98,7 @@ export default function InquiryManagement() {
             </div>
 
             <p className="text-gray-600 text-sm font-medium leading-relaxed mb-6 line-clamp-2">
-              "{inquiry.message}"
+              &quot;{inquiry.message}&quot;
             </p>
 
             <div className="flex items-center justify-between pt-6 border-t border-gray-50">
@@ -174,7 +174,7 @@ export default function InquiryManagement() {
                 <div className="space-y-4">
                   <h4 className="text-sm font-black text-gray-800">{selectedInquiry.subject}</h4>
                   <p className="text-gray-500 text-sm leading-relaxed font-medium bg-gray-50 p-6 rounded-3xl italic">
-                    "{selectedInquiry.message}"
+                    &quot;{selectedInquiry.message}&quot;
                   </p>
                 </div>
 

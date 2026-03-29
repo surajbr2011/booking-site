@@ -108,7 +108,7 @@ export default function ContactPage() {
             </h2>
             <p className="text-sm mb-7 opacity-90">
               {roomName
-                ? `You're enquiring about: ${roomName}`
+                ? `You&apos;re enquiring about: ${roomName}`
                 : "Break the ice! Let us help you out"}
             </p>
 
@@ -116,7 +116,7 @@ export default function ContactPage() {
               {/* Name */}
               <div className="border-b border-white/40 pb-3 mb-5">
                 <label className="block text-[13.5px] font-medium opacity-90 mb-1">
-                  What's your name?*
+                  What&apos;s your name?*
                 </label>
                 <input
                   type="text"
@@ -131,7 +131,7 @@ export default function ContactPage() {
               {/* Phone */}
               <div className="border-b border-white/40 pb-3 mb-1">
                 <label className="block text-[13.5px] font-medium opacity-90 mb-1">
-                  What's your phone number?*
+                  What&apos;s your phone number?*
                 </label>
                 <input
                   type="tel"

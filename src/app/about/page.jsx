@@ -60,7 +60,7 @@ export default function AboutPage() {
                 </p>
 
                 <p>
-                  Accommodations at The Exotica Agonda are a true testament to the resort's commitment to providing guests with a comfortable and immersive experience. The resort offers a range of options, including Garden AC Cottages and Garden View Cottages, each thoughtfully designed with a touch of rustic charm and equipped with modern amenities. Guests can wake up to the sounds of nature, take leisurely strolls on the pristine beach, or unwind amidst the lush tropical gardens that surround the resort.
+                  Accommodations at The Exotica Agonda are a true testament to the resort&apos;s commitment to providing guests with a comfortable and immersive experience. The resort offers a range of options, including Garden AC Cottages and Garden View Cottages, each thoughtfully designed with a touch of rustic charm and equipped with modern amenities. Guests can wake up to the sounds of nature, take leisurely strolls on the pristine beach, or unwind amidst the lush tropical gardens that surround the resort.
                 </p>
               </div>
 
