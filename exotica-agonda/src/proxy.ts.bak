@@ -1,0 +1,41 @@
+import { withAuth } from "next-auth/middleware";
+import { NextResponse } from "next/server";
+
+// NextAuth Middleware protects routes based on active sessions
+// We use withAuth to get the token directly
+export default withAuth(
+    function middleware(req) {
+        // Role-based access control logic
+        const token = req.nextauth.token;
+
+        // Example: Only allow 'admin' role to access /admin/dashboard and /api/admin
+        const isApiAdminRoute = req.nextUrl.pathname.startsWith("/api/admin");
+        const isAdminRoute = req.nextUrl.pathname.startsWith("/admin");
+
+        // We allow /admin/login to be accessed without a token
+        if (req.nextUrl.pathname === "/admin/login" || req.nextUrl.pathname === "/admin/reset-password") {
+            return null;
+        }
+
+        if ((isApiAdminRoute || isAdminRoute) && token?.role !== "admin") {
+            // If navigating to page, redirect to login
+            if (isAdminRoute && !isApiAdminRoute) {
+                return NextResponse.redirect(new URL("/admin/login", req.url));
+            }
+            // If API route, return 401 Unauthorized
+            return new NextResponse(JSON.stringify({ error: "Unauthorized" }), { status: 401, headers: { 'content-type': 'application/json' } });
+        }
+    },
+    {
+        callbacks: {
+            // Middleware only runs if authorized returns true, returning true means it ALWAYS runs
+            // we handle the logic inside the middleware function above
+            authorized: () => true,
+        },
+    }
+);
+
+// Apply middleware to these path matchers
+export const config = {
+    matcher: ["/admin/:path*", "/api/admin/:path*"],
+};
