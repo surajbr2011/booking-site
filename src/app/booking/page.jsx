@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { BookingWizard } from "@/components/booking/BookingWizard";
 
 export default function BookingPage() {
@@ -11,7 +12,9 @@ export default function BookingPage() {
           <p className="text-gray-500 font-medium">Complete the steps below to confirm your reservation at The Exotica Agonda.</p>
         </div>
         
-        <BookingWizard />
+        <Suspense fallback={<div className="p-20 text-center font-bold text-gray-400">Loading booking wizard...</div>}>
+          <BookingWizard />
+        </Suspense>
       </div>
     </main>
   );
