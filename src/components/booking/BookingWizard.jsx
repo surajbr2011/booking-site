@@ -198,7 +198,7 @@ export function BookingWizard() {
         </FormProvider>
       </div>
 
-      <div className="w-full lg:w-80 shrink-0 sticky top-32 order-1 lg:order-2">
+      <div className="w-full lg:w-80 shrink-0 lg:sticky lg:top-32 order-1 lg:order-2">
         <div className="bg-white rounded-[40px] shadow-2xl border border-gray-50 overflow-hidden">
           <div className="relative h-48">
             <img src={selectedRoom?.img} className="w-full h-full object-cover" alt={selectedRoom?.title} />

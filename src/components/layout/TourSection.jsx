@@ -6,7 +6,7 @@ export function TourSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image 
-          src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&q=80" 
+          src="/assets/Agonda Beach.png" 
           alt="Exotica Agonda Resort Tour Background"
           fill
           className="object-cover"

@@ -52,9 +52,9 @@ export function DestinationsSection() {
             className="w-full lg:w-2/3 flex gap-6 overflow-x-auto pb-6 pt-4 snap-x no-scrollbar scroll-smooth"
           >
             {[
-              { name: "Agonda Beach", textColor: "text-black", img: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&q=80" },
-              { name: "Palelom Beach", textColor: "text-white", img: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&q=80" },
-              { name: "Butterfly Beach", textColor: "text-white", img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80" },
+              { name: "Agonda Beach", textColor: "text-black", img: "/assets/Agonda Beach.png" },
+              { name: "Palelom Beach", textColor: "text-white", img: "/assets/Palelom Beach.png" },
+              { name: "Butterfly Beach", textColor: "text-white", img: "/assets/Butterfly Beach.png" },
               { name: "Cola Beach", textColor: "text-white", img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80" }
             ].map((dest, i) => (
               <div key={i} className="min-w-[220px] lg:min-w-[240px] w-1/3 shrink-0 aspect-[1/1.55] rounded-[48px] overflow-hidden relative group cursor-pointer shadow-lg snap-start">

@@ -14,7 +14,7 @@ export default function AboutPage() {
     <main className="bg-[#f9f7f2]">
       <Hero 
         title="About Us" 
-        backgroundImage="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80" 
+        backgroundImage="/assets/about image.png" 
         showBookingWidget={false}
       />
 
@@ -34,7 +34,7 @@ export default function AboutPage() {
             >
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border-[6px] border-[#1e81b0] aspect-[1.4/1] relative z-10 transition-transform hover:scale-[1.02] duration-500">
                 <Image 
-                  src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80" 
+                  src="/assets/about image.png" 
                   alt="Resort View" 
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -85,7 +85,7 @@ export default function AboutPage() {
             {!isPlaying ? (
               <>
                 <Image 
-                  src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1200" 
+                  src="/assets/about image.png" 
                   alt="Video Thumbnail"
                   fill
                   sizes="100vw"

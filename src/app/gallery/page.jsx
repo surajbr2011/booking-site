@@ -9,15 +9,11 @@ import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
 const galleryImages = [
-  { id: 1,  src: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80",  title: "Resort Exterior",   category: "Exterior" },
-  { id: 2,  src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80",  title: "Lush Greenery",     category: "Nature"   },
-  { id: 3,  src: "https://images.unsplash.com/photo-1590490359683-658d3d23f972?auto=format&fit=crop&q=80",  title: "Garden Cottage",    category: "Rooms"    },
-  { id: 4,  src: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80",  title: "Outdoor Seating",   category: "Exterior" },
-  { id: 5,  src: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80",  title: "Resort Entrance",   category: "Exterior" },
-  { id: 6,  src: "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80",  title: "Deluxe Room",       category: "Rooms"    },
-  { id: 7,  src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80",  title: "Agonda Beach",      category: "Beach"    },
-  { id: 8,  src: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&q=80",  title: "Beach Sunset",      category: "Beach"    },
-  { id: 9,  src: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&q=80",  title: "Tropical View",     category: "Nature"   },
+  { id: 1,  src: "/assets/image 778.png",  title: "Resort Exterior",   category: "Exterior" },
+  { id: 2,  src: "/assets/image 779.png",  title: "Lush Greenery",     category: "Nature"   },
+  { id: 3,  src: "/assets/image 780.png",  title: "Garden Cottage",    category: "Rooms"    },
+  { id: 4,  src: "/assets/image 781.png",  title: "Outdoor Seating",   category: "Exterior" },
+  { id: 5,  src: "/assets/image 782.png",  title: "Resort Entrance",   category: "Exterior" },
 ];
 
 const CATEGORIES = ["All", "Rooms", "Exterior", "Beach", "Nature"];
@@ -47,7 +43,7 @@ export default function GalleryPage() {
     <main className="bg-[#f8f9fa]" onKeyDown={handleKeyDown} tabIndex={-1}>
       <Hero 
         title="Gallery" 
-        backgroundImage="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80"
+        backgroundImage="/assets/image 778.png"
         showBookingWidget={false}
       />
 

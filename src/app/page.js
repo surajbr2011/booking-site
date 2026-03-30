@@ -89,7 +89,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <div className="rounded-[40px] overflow-hidden shadow-lg border-4 border-[#1e81b0] w-[90%] mx-auto lg:w-full relative drop-shadow-sm aspect-[4/3]">
             <Image 
-              src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80" 
+              src="/assets/about image.png" 
               alt="The Exotica Agonda Resort View" 
               fill
               sizes="(max-width: 1024px) 90vw, 50vw"
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-10 md:gap-14 items-center">
             <div className="w-full md:w-[55%] rounded-[40px] overflow-hidden shadow-lg aspect-[1.4/1] relative flex-shrink-0">
               <Image 
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80" 
+                src="/assets/Garden AC Cottage 02.png" 
                 alt="Garden AC Cottage Interior" 
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -166,7 +166,7 @@ export default function Home() {
             </div>
             <div className="w-full md:w-[55%] rounded-[40px] overflow-hidden shadow-lg aspect-[1.4/1] relative flex-shrink-0">
               <Image 
-                src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80" 
+                src="/assets/Agonda Beach.png" 
                 alt="Agonda Beach View from Resort" 
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

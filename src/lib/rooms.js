@@ -5,8 +5,8 @@ export const rooms = [
     type: 'Chill', 
     category: 'Premium', 
     price: 4500, 
-    img: 'https://images.unsplash.com/photo-1590490359683-658d3d23f972?auto=format&fit=crop&q=80',
-    desc: 'The Exotica Agonda&apos;s Garden AC Cottage room is a sanctuary of serenity.'
+    img: '/assets/Garden AC Cottage 01.png',
+    desc: 'The Exotica Agonda\'s Garden AC Cottage room is a sanctuary of serenity.'
   },
   { 
     id: 2, 
@@ -14,7 +14,7 @@ export const rooms = [
     type: 'Relax', 
     category: 'Luxury', 
     price: 5200, 
-    img: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80',
+    img: '/assets/Garden AC Cottage 02.png',
     desc: 'Thoughtfully designed with a fusion of contemporary elegance and rustic charm.'
   },
   { 
@@ -23,7 +23,7 @@ export const rooms = [
     type: 'Chill', 
     category: 'Premium', 
     price: 4500, 
-    img: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80',
+    img: '/assets/Garden AC Cottage 03.png',
     desc: 'Wake up to the sounds of nature in our premium garden-facing cottages.'
   },
   { 
@@ -32,7 +32,7 @@ export const rooms = [
     type: 'Relax', 
     category: 'Premium', 
     price: 5200, 
-    img: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=80',
+    img: '/assets/Garden AC Cottage 04.png',
     desc: 'Experience pure relaxation in our spacious and well-appointed guest rooms.'
   },
   { 
@@ -41,7 +41,7 @@ export const rooms = [
     type: 'Chill', 
     category: 'Luxury', 
     price: 4500, 
-    img: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&q=80',
+    img: '/assets/Garden AC Cottage 05.png',
     desc: 'A perfect blend of comfort and style with stunning garden views.'
   },
   { 
@@ -50,7 +50,7 @@ export const rooms = [
     type: 'Relax', 
     category: 'Premium', 
     price: 5200, 
-    img: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80',
+    img: '/assets/Garden AC Cottage 06.png',
     desc: 'Modern luxury meets natural splendor in our premium cottages.'
   },
   { 

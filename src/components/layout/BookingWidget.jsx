@@ -128,7 +128,12 @@ export function BookingWidget() {
                     name="checkOut"
                     value={dates.checkOut}
                     onChange={handleDateChange}
-                    min={dates.checkIn ? new Date(new Date(dates.checkIn).getTime() + 86400000).toISOString().split('T')[0] : ""}
+                    min={(()=>{
+                      if (!dates.checkIn) return "";
+                      const d = new Date(dates.checkIn);
+                      if (isNaN(d.getTime())) return "";
+                      return new Date(d.getTime() + 86400000).toISOString().split('T')[0];
+                    })()}
                     className="absolute inset-0 w-full h-full opacity-0 z-20 cursor-pointer"
                   />
                   <span className="text-[#1e293b] font-bold text-[18px] sm:text-[20px] pointer-events-none z-10 whitespace-nowrap">
@@ -144,7 +149,7 @@ export function BookingWidget() {
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 flex items-center justify-center cursor-pointer"
             >
               <div className="w-[62px] h-[62px] sm:w-[68px] sm:h-[68px] rounded-full bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <div className="w-[44px] h-[44px] sm:w-[46px] sm:h-[46px] rounded-full border border-[1.5px] border-gray-200 flex items-center justify-center text-[#8e9faf] bg-white group-hover:text-[#0b7fb5] group-hover:border-[#0b7fb5] transition-colors">
+                <div className="w-[44px] h-[44px] sm:w-[46px] sm:h-[46px] rounded-full border-[1.5px] border-gray-200 flex items-center justify-center text-[#8e9faf] bg-white group-hover:text-[#0b7fb5] group-hover:border-[#0b7fb5] transition-colors">
                   <Calendar className="w-5 h-5 sm:w-[20px] sm:h-[20px]" strokeWidth={1.5} />
                 </div>
               </div>
